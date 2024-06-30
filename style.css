@@ -51,6 +51,7 @@ body {
   outline: none;
   border-radius: 20px;
   box-shadow: 4px 6px 8px lightgrey;
+  text-align: center;
 }
 
 textarea::placeholder {
