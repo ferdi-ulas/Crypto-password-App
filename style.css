@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("./İmage/windows-11-dark-mode-blue-stock-official-3840x2160-5630.jpg");
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: #894690;
+  padding: 20px;
+  text-align: center;
+  color: lightgrey;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#RightTextArea,
+#LeftTextArea {
+  width: 648px;
+  height: 370px;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 4px 6px 8px lightgrey;
+}
+
+textarea::placeholder {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#encodeButton {
+  padding: 8px;
+  width: 120px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(83, 74, 147);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#decodeButton {
+  padding: 8px;
+  width: 120px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(195, 37, 69);
+  color: #fff;
+}
+#cleanButton {
+  padding: 8px;
+  margin-top: 10px;
+  width: 120px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(99, 99, 99);
+  color: #fff;
+}
+
+#encodeButton:hover {
+  background-color: rgb(61, 54, 113);
+  cursor: pointer;
+}
+
+#decodeButton:hover {
+  background-color: rgb(156, 30, 55);
+  cursor: pointer;
+}
+#cleanButton:hover {
+  background-color: rgb(73, 73, 73);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  #RightTextArea,
+  #LeftTextArea {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  #RightTextArea,
+  #LeftTextArea {
+    width: 90%;
+    height: 250px;
+  }
+
+  .buttonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin-top: -16px;
+  }
+
+  #container {
+    padding: 1rem;
+    width: 100%;
+  }
+  .header {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  #RightTextArea,
+  #LeftTextArea {
+    width: 95%;
+    height: 200px;
+  }
+
+  #encodeButton,
+  #decodeButton,
+  #cleanButton {
+    width: 100px;
+    font-size: 12px;
+    padding: 6px;
+  }
+}
