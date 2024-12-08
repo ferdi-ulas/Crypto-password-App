@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crypto Password</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <div class="header">
-        <h1 class="title">Şifre Uygulaması</h1>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Password</title>
 
-      <div class="content">
-        <textarea
-          id="LeftTextArea"
-          cols="30"
-          rows="10"
-          placeholder="Kriptolanacak Şifreyi Giriniz..."
-        ></textarea>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="buttonDiv">
-          <button id="encodeButton" type="button">Şifrele</button>
-          <button id="decodeButton" type="button">Çöz</button>
-          <button id="cleanButton" type="button">Temizle</button>
-        </div>
-
-        <textarea
-          id="RightTextArea"
-          cols="30"
-          rows="10"
-          placeholder="Şifrelenmiş Hali..."
-        ></textarea>
-      </div>
-
-      <span class="footer">Copyright Ferdi ULAŞ 2024</span>
+<body>
+  <div id="container">
+    <div class="header">
+      <h1 class="title">Kripto Şifreleme : Şifre Güvenliği</h1>
     </div>
 
-    <script src="app.js"></script>
-  </body>
+    <div class="content">
+      <textarea id="LeftTextArea" cols="30" rows="10" placeholder="Kriptolanacak Şifreyi Giriniz..."></textarea>
+
+      <div class="buttonDiv">
+        <button id="encodeButton" type="button">Şifrele</button>
+        <button id="decodeButton" type="button">Çöz</button>
+        <button id="cleanButton" type="button">Temizle</button>
+      </div>
+
+      <textarea id="RightTextArea" cols="30" rows="10" placeholder="Şifrelenmiş Hali..."></textarea>
+    </div>
+
+    <span class="footer">Copyright Ferdi ULAŞ 2024</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("./İmage/windows-11-dark-mode-blue-stock-official-3840x2160-5630.jpg");
@@ -47,6 +48,8 @@ body {
 #LeftTextArea {
   width: 550px;
   height: 370px;
+  padding: 15px;
+  margin: 0px 5px;
   font-size: 1.5rem;
   outline: none;
   border-radius: 20px;
@@ -81,6 +84,7 @@ textarea::placeholder {
   background-color: rgb(195, 37, 69);
   color: #fff;
 }
+
 #cleanButton {
   padding: 8px;
   margin-top: 10px;
@@ -102,6 +106,7 @@ textarea::placeholder {
   background-color: rgb(156, 30, 55);
   cursor: pointer;
 }
+
 #cleanButton:hover {
   background-color: rgb(73, 73, 73);
   cursor: pointer;
@@ -118,6 +123,7 @@ textarea::placeholder {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
+
   #RightTextArea,
   #LeftTextArea {
     width: 80%;
@@ -154,6 +160,7 @@ textarea::placeholder {
     padding: 1rem;
     width: 100%;
   }
+
   .header {
     font-size: 1.2rem;
     padding: 10px;
